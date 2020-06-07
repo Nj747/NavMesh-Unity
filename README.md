@@ -1,5 +1,7 @@
-# Unity AI - Nav Mesh Agent (Basic)
+# Unity AI - Nav Mesh Agent (Basic) :computer:
 
-Point and click
+This is a basic Nav Mesh Tutorial using Unity. 
+![Alt Text](https://github.com/Nj747/NavMesh-Unity/blob/master/pointClick.gif)
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+You can download the unity package (version 2018) or just copy and paste the code in the first file.
+[Youtube video tutorial](https://www.youtube.com/watch?v=Vn_JQgOWk-U)
