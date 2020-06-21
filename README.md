@@ -1,5 +1,5 @@
 # Unity AI - Nav Mesh Agent (Basic) :computer:
-
+## Nav Mesh Agent #1
 This is a basic Nav Mesh Tutorial using Unity. [Youtube video tutorial](https://www.youtube.com/watch?v=Vn_JQgOWk-U)
 ![Alt Text](https://github.com/Nj747/NavMesh-Unity/blob/master/pointClick.gif)
 
@@ -35,4 +35,34 @@ public class PlayerController : MonoBehaviour
 }
 
 ```
+## Nav Mesh Agent #2 - Jump, Drop and dynamic obstacles
+![Alt Text](https://github.com/Nj747/NavMesh-Unity/blob/master/Jump&Drop.gif)
 
+Download the corresponding unity package to see the full project. There's also a YT video. The script to move the objects is this:
+```cs
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Obstacles : MonoBehaviour
+{
+    int direction = 1;
+
+    void Start ()
+    {
+    	InvokeRepeating("ChangeDirection", 0f, 2f);
+    }
+	
+    void ChangeDirection()
+    {
+        direction = direction * (-1);
+    }
+
+    private void Update()
+    {
+        transform.Translate(Vector3.right * direction * Time.deltaTime);
+    }
+}
+```
+
+Feel free to copy and paste whatever you need. It is basic, but useful for beginners.
